@@ -1,0 +1,47 @@
+
+<view class="container">
+  <view>
+  <h1>欢迎使用溯源系统</h1>
+  </view>
+  <view class="h1">信息录入</view>
+  
+      <view wx:if="{{identify==0}}">
+      <view class="table">
+       <view class="th">
+          <view class="td" data-id="1" bindtap="Skip" hover-class='wsui-btn__hover_list'>农产品信息</view>
+          <view class="td" data-id="2" bindtap="Skip" hover-class='wsui-btn__hover_list'>种植过程信息</view>
+       </view>
+       <view class="th">
+          <view class="td" data-id="3" bindtap="Skip" hover-class='wsui-btn__hover_list'>田地信息</view>
+          <view class="td" data-id="4" bindtap="Skip" hover-class='wsui-btn__hover_list'>浇水信息</view>
+       </view>
+       <view class="th">
+          <view class="td" data-id="5" bindtap="Skip" hover-class='wsui-btn__hover_list'>施肥信息</view>
+          <view class="td" data-id="6" bindtap="Skip"hover-class='wsui-btn__hover_list'>打农药信息</view>
+       </view>
+       </view>
+      </view>
+       <view wx:if="{{identify==1}}">
+      <view class="table">
+       <view class="th">
+          <view class="td" bindtap="Skip" hover-class='wsui-btn__hover_list'>质检信息</view>
+          <view class="td" bindtap="Skip" hover-class='wsui-btn__hover_list'>包装信息</view>
+       </view>
+      </view>
+       </view>
+      <view wx:if="{{identify==2}}">
+      <view class="table">
+       <view class="th">
+          <!-- <view class="td_row" bindtap="Skip">二维码信息</view> -->
+          <view class="td_row" bindtap="Skip" hover-class='wsui-btn__hover_list'>运输信息</view>
+       </view>
+      </view>
+      </view>
+       <view wx:if="{{identify==4}}">
+      <view class="table">
+       <view class="th">
+          <view class="td_row" bindtap="Skip" hover-class='wsui-btn__hover_list'>超市信息</view>
+       </view>
+     </view>
+  </view>
+</view>

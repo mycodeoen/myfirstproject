@@ -1,0 +1,45 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@font-face {
+  font-family: 'iconfont';  /* Project id 3311171 */
+  src: url('//at.alicdn.com/t/font_3311171_8u2shteyyk5.woff2?t=1649342981368') format('woff2'),
+       url('//at.alicdn.com/t/font_3311171_8u2shteyyk5.woff?t=1649342981368') format('woff'),
+       url('//at.alicdn.com/t/font_3311171_8u2shteyyk5.ttf?t=1649342981368') format('truetype');
+}
+
+.iconfont{
+  font-family: "iconfont"!important;
+  font-size: 50px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-shouye:before{content: '\ea71';}
+.icon-fenlei:before{content: '\eac4';}
+.icon-zhaopian:before{content: '\ea73';}
+.icon-shipin:before{content: '\e63b';}

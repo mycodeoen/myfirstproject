@@ -1,0 +1,1 @@
+"D:\Program Files\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-0ggyq3gf8f3bf323 --n quickstartFunctions --r --project "C:\Users\zpc\WeChatProjects\农产品溯源" --report_first --report

@@ -1,0 +1,47 @@
+/**index.wxss**/
+
+.table{
+       margin-top: 40px;
+       display: flex;
+       flex-wrap: wrap;
+       text-align: center;
+}
+.th{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self:space-between;
+
+}
+.td{
+     margin: 2px;
+     width:120px;
+     height: 80px;
+     border: 5px solid black; 
+     border-radius: 3%;
+     text-align: center;
+     line-height: 80px;
+     font-weight: bold;
+     font-size: 17px;
+     background-color: greenyellow;
+}
+.td_row{
+  width:244px;
+  height: 80px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: greenyellow;
+}
+.wsui-btn__hover_list {
+  opacity: inherit;
+  background: gray;
+}
+.h1{
+  margin: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}

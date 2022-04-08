@@ -1,0 +1,87 @@
+<!--pages/inputinfo/register.wxml-->
+<view>
+  <view class="h1">信息录入</view> 
+   <view wx:if="{{id==1}}" class="form">
+    <form bindsubmit="Login">
+      <view style="display: flex;flex-wrap: wrap;"> <label>负责人:</label><input type='text' name="password" placeholder="请输入密码" />
+       <label>农产品名称:</label><input type='text' name="pro_name" placeholder="请输入农产品名称" />
+       <label>产<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>地:</label><input type='text' name="place" placeholder="请输入密码" />
+       <label>品<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>种:</label><input type='text' name="variety" placeholder="请输入密码" />
+       <label>日<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>期:</label><input type='text' name="date" placeholder="请输入密码" />
+       <!-- <label>描<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>述:</label><input type='text' name="details" placeholder="请输入密码" /> -->
+       <label>描<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>述:</label><textarea bindblur="bindTextAreaBlur"  placeholder="请输入对产品的描述" maxlength="-1"/>
+
+      </view>
+      <button form-type="submit">提交</button>
+      </form>
+     </view>
+  <view wx:if="{{id==2}}" class="form">
+      <form bindsubmit="Login">
+       <view style="display: flex;flex-wrap: wrap;"> <label>负责人:</label><input type='text' name="person" placeholder="请输入负责人" />
+        <label>日<text decode>&nbsp;&nbsp;</text>期:</label><input type='text' name="date" placeholder="请输入日期" />
+        <label>产<text decode>&nbsp;&nbsp;</text>品ID:</label><input type='text' name="pro_id" placeholder="请输入产品ID" />
+        <label>田<text decode>&nbsp;&nbsp;</text>地ID:</label><input type='text' name="filed_id" placeholder="请输入田地ID" />
+        <label>详<text decode>&nbsp;&nbsp;</text>情:</label>
+        <textarea bindblur="bindTextAreaBlur"  placeholder="请输入种植过程详情" maxlength="-1"/>
+        <!-- <input type='text' name="details" placeholder="请输入详情" /> -->
+      </view>
+      <button form-type="submit">提交</button>
+      </form>
+  </view>
+  <view wx:if="{{id==3}}" class="form">
+    <form bindsubmit="Login">
+      <view style="display: flex;flex-wrap: wrap;"> 
+      <label>面积:</label><input type='text' name="password" placeholder="请输入面积" />
+      <label>温度</label><input type='text' name="password" placeholder="请输入温度" />
+      <label>湿度</label><input type='text' name="password" placeholder="请输入湿度" />
+      <label>详<text decode>&nbsp;&nbsp;</text>情:</label>
+        <textarea bindblur="bindTextAreaBlur"  placeholder="请输入浇水详情" maxlength="-1"/>
+      </view>
+      <button form-type="submit">提交</button>
+      </form>
+     </view>
+  <view wx:if="{{id==4}}" class="form">
+    <form bindsubmit="Login">
+      <view style="display: flex;flex-wrap: wrap;"> 
+      <label>负责人:</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>用<text decode>&nbsp;&nbsp;</text>量:</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>日<text decode>&nbsp;&nbsp;</text>期:</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>种植过程ID</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>详<text decode>&nbsp;&nbsp;</text>情:</label>
+        <textarea bindblur="bindTextAreaBlur"  placeholder="请输入浇水详情" maxlength="-1"/>
+      </view>
+      <button form-type="submit">注册</button>
+      </form>
+  </view>
+  <view wx:if="{{id==5}}" class="form">
+    <form bindsubmit="Login">
+      <view style="display: flex;flex-wrap: wrap;"> <label>负责人:</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>种植过程ID</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>详<text decode>&nbsp;&nbsp;</text>情:</label>
+        <textarea bindblur="bindTextAreaBlur"  placeholder="请输入浇水详情" maxlength="-1"/>
+      </view>
+      <button form-type="submit">提交</button>
+      </form>
+  </view>
+  <view wx:if="{{id==6}}" class="form">
+    <form bindsubmit="Login">
+      <view style="display: flex;flex-wrap: wrap;">
+       <label>负责人:</label><input type='text' name="password" placeholder="请输入密码" />
+      <label>种植过程ID</label><input type='text' name="password" placeholder="请输入密码" /> 
+      <label>详<text decode>&nbsp;&nbsp;</text>情:</label>
+      <view class="container_notext">
+          <textarea bindblur="bindTextAreaBlur"  placeholder="请输入浇水详情" maxlength="-1"/>
+          <view class="container_inner">
+           <icon class="iconfont icon-zhaopian" bindtap="chooseVideo"></icon>
+           <view>上传照片</view> 
+          </view>
+          <view class="container_inner">
+           <icon class="iconfont icon-shipin" bindtap="uploadImg"></icon>
+           <view>上传视频</view> 
+          </view>
+        </view>
+      </view>
+      <button form-type="submit">提交</button>
+      </form>
+  </view>
+</view>

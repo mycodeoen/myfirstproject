@@ -1,0 +1,37 @@
+{
+  "resizable": true,
+  "frameset": true,
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/index/login",
+    "pages/inputinfo/register",
+    "pages/inputinfo/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "农产品溯源系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/首页.png",
+        "selectedIconPath": "images/首页.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/login/index",
+        "iconPath": "images/登录.png",
+        "selectedIconPath": "images/登录.png",
+        "text": "登录"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

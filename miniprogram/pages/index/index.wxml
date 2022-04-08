@@ -1,0 +1,21 @@
+
+<view class="container">
+  <view>
+  <h1>欢迎使用溯源系统</h1>
+  </view>  
+  <block wx:if="{{identify!=5}}">
+  <view  bindtap="aclick">
+<!-- （功能一）信息录入 -->
+  <!-- 身份为录入信息的人员有权限-->
+ <icon class="iconfont icon-fenlei"></icon>
+  
+  </view>
+  </block>
+  <block wx:elif="{{identify==5}}">
+   <view bindtap="aclick">
+  扫码溯源{{identify}}
+  <!-- 身份为消费者有权限 -->
+  <!-- <button bindtap="huo">获取</button> -->
+  </view>
+</block>
+</view>

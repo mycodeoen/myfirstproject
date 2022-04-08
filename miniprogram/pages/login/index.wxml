@@ -1,0 +1,26 @@
+
+<view class="container">
+  <view>
+  <h1>欢迎使用溯源系统</h1>
+  </view>
+ 
+  <view> 
+    <form bindsubmit="Login">
+      姓名:<input type='text' name='username' placeholder="请输入姓名"/>
+      密码:<input type='password' name="password" placeholder="请输入密码"/>
+      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      当前选择: {{time}}
+    </view>
+  </picker>
+      <picker mode="selector"  value="{{index}}" range="{{selects}}" bindchange="bindPickChange">
+          <view>
+                <text>身份:{{selects[index]}}</text> 
+            </view>
+      </picker>
+      <button form-type="submit">登录</button>
+      </form>
+      
+  </view>
+
+</view>
