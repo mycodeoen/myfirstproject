@@ -1,26 +1,26 @@
 
-<view class="container">
-  <view>
-  <h1>欢迎使用溯源系统</h1>
-  </view>
- 
-  <view> 
-    <form bindsubmit="Login">
-      姓名:<input type='text' name='username' placeholder="请输入姓名"/>
-      密码:<input type='password' name="password" placeholder="请输入密码"/>
-      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-    <view class="picker">
-      当前选择: {{time}}
-    </view>
-  </picker>
-      <picker mode="selector"  value="{{index}}" range="{{selects}}" bindchange="bindPickChange">
+<view class="container1">
+ <view class="container" > 
+    
+    <view class="model  model_show">
+    <image src="../../images/main_s.png"></image>
+    <view class="form">
+     <form catchsubmit='Login'>
+      <!-- <image src="../../images/main_s.png"></image> -->
+      <view class="main_title">溯源系统</view>
+      <view class="form_item" wx:for="{{form}}" wx:key="index">
+        <view>{{item.name}}</view>
+        <input bindinput="oninput" data-key="{{index}}" placeholder="{{item.place}}" placeholder-class="place" cursor-spacing="20"/>
+      </view>
+      <picker class="form_item" mode="selector"  value="{{index}}" range="{{selects}}" bindchange="bindPickChange">
           <view>
                 <text>身份:{{selects[index]}}</text> 
             </view>
       </picker>
-      <button form-type="submit">登录</button>
-      </form>
+      <button form-type="submit">提交</button>
+      </form> 
       
+       </view>
+       </view>
+      </view>
   </view>
-
-</view>

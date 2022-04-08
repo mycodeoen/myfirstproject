@@ -27,8 +27,8 @@
       },
       {
         "pagePath": "pages/login/index",
-        "iconPath": "images/登录.png",
-        "selectedIconPath": "images/登录.png",
+        "iconPath": "images/搜索.png",
+        "selectedIconPath": "images/搜索.png",
         "text": "登录"
       }
     ]

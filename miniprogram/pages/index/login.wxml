@@ -1,2 +1,1 @@
-<!--pages/index/login.wxml-->
-<text>pages/index/login.wxml</text>
+<web-view src="{{url}}">连接</web-view>

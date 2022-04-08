@@ -7,7 +7,21 @@ Page({
 
       selects:["种植户","质检员" ,"运输员","仓库管理员","销售员","消费者","管理员"],
       apps:app,
-      index:0
+      index:0,
+      form: { 
+        name: {
+          name: '姓名',
+          place: '请填写您的姓名'
+        },
+        tel: {
+          name: '手机',
+          place: '请填写您的手机号码'
+        },
+        retext: {
+          name: '备注',
+          place: '请填写备注'
+        }
+      }
    
      },
      bindPickChange:function (e)
@@ -32,6 +46,6 @@ Page({
     this.setData({
       time: e.detail.value
     })
-  },
+    },
 
 })

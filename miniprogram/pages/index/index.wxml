@@ -1,13 +1,15 @@
 
 <view class="container">
+  <image src="../../images/main_s.png"></image>
   <view>
   <h1>欢迎使用溯源系统</h1>
   </view>  
   <block wx:if="{{identify!=5}}">
-  <view  bindtap="aclick">
+  <view  bindtap="scanCode">
 <!-- （功能一）信息录入 -->
   <!-- 身份为录入信息的人员有权限-->
- <icon class="iconfont icon-fenlei"></icon>
+ <!-- <icon class="iconfont icon-fenlei"></icon> -->
+ <icon class="iconfont icon-jiahao"></icon>
   
   </view>
   </block>
@@ -18,4 +20,12 @@
   <!-- <button bindtap="huo">获取</button> -->
   </view>
 </block>
+<view>
+     <text>{{openId}}</text>
+</view>
+<view bindtap="getOpenId">
+
+        获取openId
+</view>
+
 </view>
